@@ -102,18 +102,18 @@ toggleButton.addEventListener('click', () => {
 //DARK MODE SETTINGS ENDS HERE
 
 // GOOGLE SHEET SCRIPT
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbyCJ_OCyjnN9WiQHlVmRtAiCkK4vRCRd4x1rINcrq1vbVbi3wwyzLQvu7l-mtXOI8WC/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxAGfJzKkxQWEPIl3sxehrZd1U8sebrxpOcckUtN2m2N8vHyMmZmvZn31lN0ye1HWHXCg/exec'
 
-// const form = document.forms['contact-form']
+const form = document.forms['contact-form']
 
-// form.addEventListener('submit', e => {
+form.addEventListener('submit', e => {
   
-//   e.preventDefault()
+  e.preventDefault()
   
-//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//   .then(response => alert("Thank you! Form is submitted" ))
-//   .then(() => { window.location.reload(); })
-//   .catch(error => console.error('Error!', error.message))
-// })
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
 
 });
