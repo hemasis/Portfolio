@@ -560,13 +560,13 @@ button#darkModeToggle {
 /* footer section styling */
 footer{
     /* background: #111; */
-    background: crimson;
+    background: rgb(25, 25, 25);
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
 footer span a{
-    color: black;
+    color: crimson;
     text-decoration: none;
 }
 footer span a:hover{
